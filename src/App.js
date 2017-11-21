@@ -25,12 +25,7 @@ class AppContainer extends Component {
       isOpen: false
     }
   }
-  //   render() {     return (       <div className="App">         <header
-  // className="App-header">           <img src={logo} className="App-logo"
-  // alt="logo" />           <h1 className="App-title">Welcome to React</h1>
-  //   </header>         <p className="App-intro">           To get started, edit
-  // <code>src/App.js</code> and save to reload.         </p>       </div>     );
-  //  }
+
 
   handleSelect = (selectedKey) => {
     alert(`selected ${selectedKey}`);
@@ -52,10 +47,10 @@ class AppContainer extends Component {
         <Container>
           <Row>
             <Col lg="12">
-              <Navbar light expand="md" className="navBar1">
+              <Navbar dark expand="md" className="navBar1">
 
                 <NavbarBrand className="navbar-title" href="/"><h3 className= "navBar-title">NightMusic</h3></NavbarBrand>
-                <NavbarToggler onClick={this.toggle}/>
+                <NavbarToggler   onClick={this.toggle}/>
 
                 <Collapse isOpen={this.state.isOpen} navbar>
                   <Nav className="md" navbar>
