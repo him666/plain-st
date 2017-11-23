@@ -1,35 +1,31 @@
 [
     {
-        "text": "HOME",
-        "url": "#"
-    },
-    {
         "text": "NEWS",
-        "url": "#"
+        "url": "/news"
     },
     {
         "text": "OUR BANDS",
-        "url": "#"
+        "url": "/bands"
     },
     {
         "text": "CODE REDEEM",
-        "url": "#"
+        "url": "/redeemer"
     },
     {
         "text": "ABOUT US",
-        "url": "#"
+        "url": "/us"
     },
     {
         "text": "GET INVOLVED",
-        "url": "#"
+        "url": "/involved"
     },
     {
         "text": "LOGIN",
-        "url": "#"
+        "url": "/login"
     },
     {
         "text": "OUR BANDS2",
-        "url": "#",
+        "url": "/bands2",
         "submenu": [
             {
                 "text": "Sublink 1",
