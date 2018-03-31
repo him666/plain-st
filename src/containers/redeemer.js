@@ -1,16 +1,10 @@
 import React, { Component } from 'react'
 import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
   Container,
   Row,
   Col
 } from 'reactstrap';
+import  Header  from '../components/header'
 /**
 |--------------------------------------------------
 | keep in mind that:
@@ -27,15 +21,16 @@ constructor(props) {
 
 
 handleCodeChange = (e) => {
-  if (e.target.value.length == 15) {
+  if (e.target.value.length === 15) {
     //check if code is valid
     console.log(e.target.value)
     this.setState({content: "sorry not a valid code... Bitch!"})
   }
 }
   render() {
-   
     return (
+    <div>  
+       <Header />
       <div>
       <Container>
           <Row>
@@ -50,6 +45,7 @@ handleCodeChange = (e) => {
           </Row>
         </Container>
       </div>
+    </div>
     )
   }
 }

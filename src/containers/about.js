@@ -1,19 +1,13 @@
 import React, {Component} from 'react'
 import {Container, Col, Row} from 'reactstrap';
-
+import  Header  from '../components/header'
 export default class About extends Component {
   render() {
     return (
       <div>
-
-        <Container>
-         
-            <div className="text-center">
-              <h1>Who are we?</h1>
-            </div>
-          
+        <Header />
+        <Container>  
           <Row>
-
             <Col xs="6" sm="4">
               <h3>Underground Music Oriented Platform</h3>
                 <p>have a band? want to be heard by everyone but none of the bureaucracy?</p>
