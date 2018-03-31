@@ -29,6 +29,8 @@
 
 .img-head {
     text-align: center;
+    width: 50%;
+    height: auto;
 }
 
 .navbar-parent {
@@ -37,6 +39,7 @@
 
 .navBar-title {
     color: #c40407;
+    
 }
 
 .navBar1 {
