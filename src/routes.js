@@ -13,7 +13,7 @@ const Routes = () => (
         <main>
             <Route exact path="/" component={AppContainer}/>
             <Route exact path="/news" component={News}/>
-            <Route exact path="/about" component={About}/>
+            <Route exact path="/us" component={About}/>
             <Route exact path="/bands" component={Bands}/>
             <Route exact path="/redeemer" component={Redeemer}/>
             <Route exact path="/involved" component={Involved}/>
