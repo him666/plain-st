@@ -72,6 +72,18 @@ li a:hover {
     color: white;
 }
 
+p {
+    text-justify: auto;
+   
+}
+.imageus {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-left: 15%;
+    margin-right: auto;
+    padding-top: 15%;
+}
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);
