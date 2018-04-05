@@ -8,7 +8,7 @@ export function getEvents(state = initialState, action) {
     switch (action.type) {
         case GET_EVENTS:
             console.log(action.payload)
-            return Object.assign({}, state, {events: action.payload})
+            return Object.assign({}, state, { ...action.payload })
         
         default:
             return (state)
