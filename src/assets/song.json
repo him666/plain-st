@@ -1,0 +1,12 @@
+{
+    "song": {
+    "album_id": 1,
+    "name": "Cuando el Cielo Estalle", 
+    "view_count": 0, 
+    "published": false,
+    "duration": 120, 
+    "description":  "Segundo  sencillo del Album Cenizas.",
+    "art": "https://scontent.fgdl4-1.fna.fbcdn.net/v/t1.0-9/13043497_1041216815953081_5895371526690631279_n.jpg?_nc_cat=0&oh=7b22ce7f38306d5a5fe26d994be62e69&oe=5B68956A",
+    "disclaimer": "Disclaimer All information and content contained in this website are provided solely for general information and reference purposes." 
+    }
+}

@@ -1,22 +1,49 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import {withRouter} from "react-router-dom";
 import {Container, Col, Row} from 'reactstrap';
-import  Header  from '../components/header'
 
-export default class News extends Component {
+import { getEvents } from '../actions'
+
+import  Header  from '../components/header'
+import img1 from '../assets/worldwide.png'
+
+
+class News extends Component {
+  constructor() {
+    super();
+    this.state = {
+      events: []
+    }
+  }
+
+  componentWillMount(){
+    this.setState({ events: this.props.getEvents() })
+  }
+
   render() {
     return (
       <div>
         <Header />
         <Container>
           <Row>
-          <Col sm="2" md={{ size: 12, offset: 2 }}>
-            <div className="text-center">
-               <h1> find out what's going on </h1>
-             </div>
-           </Col>
+            <Col xs="12" sm="4" md="4">
+            </Col>
+            <Col xs="12" sm="4" md="4">
+              <div>
+                 <img src={img1} alt="news" className="imageus"/>
+              </div>
+            </Col>
           </Row>
         </Container>
       </div>
     )
   }
 }
+function mapStateToProps(state) {
+  return {
+   events: state.events
+  }
+}
+
+export default withRouter(connect(mapStateToProps, {getEvents})(News)); 

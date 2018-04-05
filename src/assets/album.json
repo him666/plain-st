@@ -1,0 +1,12 @@
+{
+    "album": {
+        "band_id": 1,
+        "name": "Cenizas", 
+        "view_count": 0, 
+        "published": false, 
+        "release": 1523725200, 
+        "description": "Primer Album de la Banda Lexie", 
+        "art": "https://scontent.fgdl4-1.fna.fbcdn.net/v/t1.0-9/13043497_1041216815953081_5895371526690631279_n.jpg?_nc_cat=0&oh=7b22ce7f38306d5a5fe26d994be62e69&oe=5B68956A", 
+       "disclaimer": "Disclaimer All information and content contained in this website are provided solely for general information and reference purposes."
+    }
+}
