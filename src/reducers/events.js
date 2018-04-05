@@ -1,17 +1,14 @@
-import { GET_EVENTS } from '../actions'
+import { GET_EVENTS } from "../actions";
 
-const initialState = {
-    events: []
-}
+const initialState = [];
 
 export function getEvents(state = initialState, action) {
-    switch (action.type) {
-        case GET_EVENTS:
-            console.log(action.payload)
-            return Object.assign({}, state, {events: action.payload})
-        
-        default:
-            return (state)
-    }
+  switch (action.type) {
+    case GET_EVENTS:
+      console.log(action.payload);
+      return [...state, ...action.payload];
 
+    default:
+      return state;
+  }
 }
