@@ -24,7 +24,7 @@ handleCodeChange = (e) => {
   if (e.target.value.length === 15) {
     //check if code is valid
     console.log(e.target.value)
-    this.setState({content: "sorry not a valid code... Bitch!"})
+    this.setState({content: "sorry not a valid code..."})
   }
 }
   render() {
@@ -37,7 +37,7 @@ handleCodeChange = (e) => {
            <Col sm="2" md={{ size: 12, offset: 2 }}>
             <div className="text-center">
                 <h1>Claim your Music now!</h1>
-                <input maxLength={15} placeholder= "claim it now bitch"  value={this.state.code} type="text" size={35} onChange={this.handleCodeChange}/>
+                <input maxLength={15} placeholder= "insert Code"  value={this.state.code} type="text" size={35} onChange={this.handleCodeChange}/>
                 <h1>{this.state.content}</h1>
                 
               </div>

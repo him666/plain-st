@@ -15,7 +15,7 @@ class News extends Component {
       events: []
     };
   }
-  componentDidMount() {}
+  
 
   componentWillMount() {
     this.props.getEvents();

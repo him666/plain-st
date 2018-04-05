@@ -23,7 +23,7 @@ export function getBands() {
         axios
         .get("https://nightapi.herokuapp.com/api/bands")
           .then((resp) => {
-              dispatch( { type: GET_BANDS, payload: resp.data } )
+              dispatch( { type: GET_BANDS, payload: resp.data.data } )
           })
           .catch((err) => console.log(err))
     }

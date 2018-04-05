@@ -99,7 +99,14 @@ p {
 }
 .description{
     color: #c40407;
-    
+    text-justify: newspaper;
+    text-align: left;
+}
+
+.logo{
+    display: block;
+    width: 85%;
+    height: auto;
 }
 @keyframes App-logo-spin {
     from {

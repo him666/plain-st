@@ -3,13 +3,13 @@ import {Col, Row} from 'reactstrap';
 
 
 const Event = ({ props }) => (
-    <Row>
-	  <div className="Event">
-		  <h4>{ props.attributes.title }</h4> { /*This is a example text*/ }
-              <p>{ `${props.attributes.content}` }</p>
-		
-	  </div>
-    </Row>
+    <div>
+      <Row key={props.id}>
+         <h1 className="title">{props.attributes.title} </h1>
+         <p className= "description"> Descripcion: {props.attributes.content}</p>
+         <img src={props.attributes.header} className="banner"/>
+      </Row>
+  </div>
 )
 
 export default Event
