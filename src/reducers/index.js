@@ -5,5 +5,5 @@ import { getEvents } from './events'
 
 export default combineReducers({
     routing: routerReducer,
-    events: getEvents
+    events:  getEvents
 })

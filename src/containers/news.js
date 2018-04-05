@@ -16,11 +16,16 @@ class News extends Component {
       events: []
     }
   }
-
-  componentWillMount(){
-    this.setState({ events: this.props.getEvents() })
+  componentDidMount(){
+   
   }
 
+  componentWillMount(){
+    this.props.getEvents()
+  
+
+  }
+  
   render() {
     return (
       <div>
@@ -32,6 +37,9 @@ class News extends Component {
             <Col xs="12" sm="4" md="4">
               <div>
                  <img src={img1} alt="news" className="imageus"/>
+                 {
+                   this.props.events.size > 0 ? <p> good </p> : <h1> No bands to Display </h1>
+                 }
               </div>
             </Col>
           </Row>
@@ -45,5 +53,6 @@ function mapStateToProps(state) {
    events: state.events
   }
 }
+
 
 export default withRouter(connect(mapStateToProps, {getEvents})(News)); 

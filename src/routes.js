@@ -11,7 +11,7 @@ import Login from './containers/login';
 const Routes = () => (
     <div>
         <main>
-            <Route exact path="/" component={AppContainer}/>
+            <Route exact path="/" component={News}/>
             <Route exact path="/news" component={News}/>
             <Route exact path="/us" component={About}/>
             <Route exact path="/bands" component={Bands}/>

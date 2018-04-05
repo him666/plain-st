@@ -9,10 +9,10 @@ export const GET_SONG = 'GET_SONG'
 export function getEvents() {
     return(dispatch, getState) => {
         axios
-        .get("https://nightapi.herokuapp.com/api/events")
+        .get("http://nightapi.herokuapp.com/api/events")
           .then((resp) => {
-              dispatch( { type: GET_EVENTS, payload: resp.data } )
-              console.log("call made")
+              dispatch( { type: GET_EVENTS, payload: resp.data.data } )
+              console.log(resp.data.data)
           })
           .catch((err) => console.log(err))
     }
