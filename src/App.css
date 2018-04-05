@@ -84,6 +84,23 @@ p {
     margin-right: auto;
     padding-top: 15%;
 }
+
+.banner {
+    display: block;
+    width: 99%;
+    height: auto;
+}
+
+.title{
+    padding-top: 5%;
+    
+    color: #c40407;
+   
+}
+.description{
+    color: #c40407;
+    
+}
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);
